@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <!-- custom css  -->
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+        .borderr {
+            border: 2px solid black;
+        }
+    </style>
+    <!-- custom js  -->
+    <!-- <script src="dom.js"></script> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Magic Notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchbox" class="form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search" />
+                
+            </form>
+        </div>
+    </nav>
+
+    <!-- add notes section starts  -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col">
+                <h2>Welcome To Magic Notes : </h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Add a note</h4>
+                        <form id="addNoteForm" action="">
+                            <div class="form-group">
+                                <input id="mytitle"  type="text" class="form-control" placeholder="Enter Title...">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="mytextarea" class="form-control" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Note</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ends of add note section    -->
+
+    <!-- your note section starts -->
+    <div class="container mb-4">
+        <div id="displayNotesDiv" class="row p-1">
+            <!-- <div  class="col-lg-4 col-md-6">
+                <h2>My Note's : </h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Note :</h4>
+                        <button type="submit" class="btn btn-primary">delete note</button>
+                    </div>
+                </div>
+                
+            </div> -->
+            
+        </div>
+    </div>
+
+    <!-- end of yout note section  -->
+
+    <!-- custom js  -->
+    <script src="3modernAddSearchDelete.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

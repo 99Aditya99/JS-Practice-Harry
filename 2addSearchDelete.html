@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+                      
+    
+    <style>
+        .btn-bg-color {
+             background-color:chocolate;
+             
+            }
+        /* .wth{
+            width: 50%;
+        } */
+        .boder{
+            border:2px solid none;
+        }
+        @media all and (max-width:480px) {
+            .custom-class { width: 100%; display:block; }
+    } 
+    </style>
+   
+    
+</head>
+<body>
+
+    <div class="container-fluide ">
+        <div class="row bg-success">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-white boder p-2 ">
+                <h3 class="d-flex justify-content-center ">Item Lister</h3>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-center boder p-2">
+                <input type="text" id="searchbox" placeholder="Search...">
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row ">
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center  boder">
+                
+                <form  class="form-inline">
+                    
+                    <input type="text" id="newItem" class="form-control mb-2 mr-sm-2 " id="additem" placeholder="Add an Item" required>
+                  
+                    <button type="submit" id="subBtn" class="btn btn-bg-color mb-2 custom-class">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col">
+                <ul class="list-group">
+                    <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Cras justo odio
+                      <span class="badge btn-bg-color badge-pill">X</span>
+                    </li> -->
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!-- custom js -->
+<script src="index2.js"></script>
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

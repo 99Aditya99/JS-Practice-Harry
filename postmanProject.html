@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title>Document</title>
+</head>
+<body>
+
+    <!-- navbar starts  -->
+    <nav class="navbar navbar-expand-lg navbar-success bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+      
+    <!-- navbar ends  -->
+
+    <!-- main content starts  -->
+    <div class="container">
+        
+        <!-- heading starts -->
+        <h2>Welcome to PostMaster</h2>
+        <!-- heading ends  -->
+        <div class="row">
+
+        <!-- form part starts -->
+        <div class="col">
+            
+            <form class="form-horizontal" action="/action_page.php">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="email">Email:</label>
+                  <div class="col">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  </div>
+                </div>
+                <div class="form-group">  
+                    <label >Your gender:</label>      
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="mygender1" name="mygender" value="male">
+                                    <label class="custom-control-label" for="mygender1">Male</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="mygender2" name="mygender" value="female">
+                                <label class="custom-control-label" for="mygender2">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="form-group">  
+                    <label >Your gender:</label>      
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="mygender1" name="mygender" value="male">
+                                    <label class="custom-control-label" for="mygender1">Male</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="mygender2" name="mygender" value="female">
+                                <label class="custom-control-label" for="mygender2">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="form-group">  
+                    <label >Your gender:</label>      
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5  ">
+                                <input type="text" class="form-control " id="inlineFormInputName2" placeholder="Jane Doe">
+                            </div>
+                            <div class="col-lg-5 col-md-5  ">
+                                <input type="text" class="form-control " id="inlineFormInputName2" placeholder="Jane Doe">
+                            </div>
+                            <div class="col-lg-2 col-md-2 ">
+                                <button type="submit" class="btn btn-primary">+</button> 
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                <div class="form-group"> 
+                    <label >Your gender:</label>             
+                    <div class="col">
+                        <textarea class="form-control rounded-0" id="textarea1" rows="3" placeholder="Type your msg..."></textarea>
+
+                    </div>
+                  </div>
+                
+                <div class="form-group">        
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+
+        </div>
+        <!-- form part ends  -->
+        </div>
+    </div>
+    <!-- main content ends  -->
+
+    <!-- response part starts -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-group"> 
+                    <label >Your gender:</label>             
+                    <div class="col">
+                        <textarea class="form-control rounded-0" id="textarea1" rows="3" placeholder="Type your msg..."></textarea>
+
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- response part ends -->
+    
+
+<script src="postmanProject.js"></script>
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <title>Document</title>
+</head>
+<body>
+    
+    <!-- alert msg -->
+    <div id="alertMsg" class="alert alert-dismissible fade " role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                
+
+                <form>
+                    <div class="form-group">
+                      <label for="myname">Your Name :</label>
+                      <input type="text" class="form-control" id="myname" placeholder="Enter Your Name...">
+                      <div class="invalid-feedback">
+                        Please provide a valid Name.
+                        <ul>
+                            <li>Eg. Rup Kumar Rathor</li>
+                            <li>Eg. Saurav Ganguly</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mypwd">Set Password :</label>
+                        <input type="password" class="form-control" id="mypwd" placeholder="Enter Password...">
+                        <div class="invalid-feedback">
+                          Please provide a valid zip.
+                          <ul>
+                            <li>The password should have a minimum of 8 characters</li>
+                            <li> and a maximum of 20 characters. Space is not allowed anywhere in between of the password</li>
+                            <li>The password must have at least one number, one uppercase alphabet, one lowercase alphabet and one special character.</li>
+                         </ul>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="myemail">Your Email id :</label>
+                        <input type="email" class="form-control " id="myemail" placeholder="Enter Your Email...">
+                        <div class="invalid-feedback">
+                          Please provide a valid email id.
+                        </div>
+                      </div>
+
+                    <div class="form-group">
+                      <label for="mycontact">Your Contact No :</label>
+                      <input type="text" class="form-control" id="mycontact" placeholder="Enter Your Mobile No...">
+                      <div class="invalid-feedback">
+                        Please provide a valid mobile no. eg. 8888877777
+                      </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label >Your gender:</label>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="mygender1" name="mygender" value="male">
+                                        <label class="custom-control-label" for="mygender1">Male</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="mygender2" name="mygender" value="female">
+                                    <label class="custom-control-label" for="mygender2">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Languages you knows:</label>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 custom-control">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1" value="english">
+                                    <label class="custom-control-label" for="customCheck1">English</label>
+                                </div>
+                                <div class="col-lg-3 col-md-3 custom-control">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2" value="hindi">
+                                    <label class="custom-control-label" for="customCheck2">Hindi</label>
+                                </div>
+                                <div class="col-lg-3 col-md-3 custom-control">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3" value="bengali">
+                                    <label class="custom-control-label" for="customCheck3">Bengali</label>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                      
+                    <div class="form-group">
+                        <label for="textarea1">Your Msg :</label>
+                        <textarea class="form-control rounded-0" id="textarea1" rows="3" placeholder="Type your msg..."></textarea>
+                        <div class="invalid-feedback">
+                            Please dont provide your Contact No.
+                        </div>
+                    </div>
+                  
+                    <select class="custom-select my-3">
+                        <option selected="">Choose your City</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="kolkata">Kolkata</option>
+                    </select>
+
+
+                    <div class="container my-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex justify-content-between">
+                                    <label for="customRange3">Set Your Profeciency Level :</label>
+                                    <!-- <input type="text" id="lname" name="lname" disabled> -->
+                                    <span id="displayRange"></span>
+                                  </div>
+                                
+                                <input type="range" class="custom-range" min="1" max="100" step="1" value="50" id="mySlider">
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div class="container">
+                        <div class="row">
+                            <div class="col custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                      
+                      
+                    <button type="submit" class="my-3 btn btn-primary btn-lg btn-block">Submit</button>
+                      
+                </form>
+                                    
+            </div>
+        </div>
+    </div>
+   
+
+<script src="regex.js"></script>
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+</body>
+</html>
